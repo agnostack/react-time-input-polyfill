@@ -8,12 +8,11 @@ import type {
 	Polyfill,
 	Segment,
 	TimeObjectKey,
-} from '@time-input-polyfill/utils/npm/types'
-import type { ManualEntryLog } from '@time-input-polyfill/utils/npm/core/ManualEntryLog/ManualEntryLog'
+	ManualEntryLogInterface,
+} from '@time-input-polyfill/utils'
 
 // Avoid bulk importing from index files to be more tree-shake friendly
-import supportsTime from '@time-input-polyfill/utils/npm/common/supportsTime'
-import { blankValues } from '@time-input-polyfill/utils/npm/common/blankValues'
+import { supportsTime, blankValues } from '@time-input-polyfill/utils'
 
 const polyfillClassName = 'react-time-input-polyfill-target'
 
@@ -105,7 +104,7 @@ const TimeInputPolyfill = ({
 	const [allowSegmentSelection, setAllowSegmentSelection] =
 		useState<boolean>(false)
 
-	const [manualEntryLog, setManualEntryLog] = useState<ManualEntryLog | null>(
+	const [manualEntryLog, setManualEntryLog] = useState<ManualEntryLogInterface | null>(
 		null,
 	)
 

@@ -26,7 +26,7 @@
 	"homepage": "https://dan503.github.io/react-time-input-polyfill/",
 	"dependencies": {
 		"@dan503/load-js": "^1.0.7",
-		"@time-input-polyfill/utils": "^1.0.4"
+		"@time-input-polyfill/utils": "github:agnostack/time-input-polyfill-utils#webpack5-dist"
 	},
 	"peerDependencies": {
 		"react": "^17.0.2 || ^18.0.0-0"
@@ -51,7 +51,6 @@
 		"cypress-plugin-tab": "^1.0.5",
 		"cypress-promise": "^1.1.0",
 		"del-cli": "^4.0.1",
-		"eslint": "^6.8.0",
 		"eslint-config-react-app": "^6.0.0",
 		"eslint-plugin-cypress": "^2.12.1",
 		"npm-run-all": "^4.1.5",
