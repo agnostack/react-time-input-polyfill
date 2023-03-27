@@ -29,7 +29,7 @@
 		"@time-input-polyfill/utils": "^1.0.4"
 	},
 	"peerDependencies": {
-		"react": "^17.0.2"
+		"react": "^17.0.2 || ^18.0.0-0"
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-private-methods": "^7.16.11",
@@ -50,9 +50,11 @@
 		"cypress-plugin-tab": "^1.0.5",
 		"cypress-promise": "^1.1.0",
 		"del-cli": "^4.0.1",
+		"eslint-config-react-app": "6.0.0",
 		"eslint-plugin-cypress": "^2.12.1",
 		"npm-run-all": "^4.1.5",
 		"react-app-polyfill": "^3.0.0",
+		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-scripts": "^4.0.3",
 		"react-syntax-highlighter": "^15.4.5",
@@ -72,7 +74,15 @@
 		"clean": "del-cli index.js index.d.ts src/core/index.js src/core/index.d.ts src/core/TimeInputPolyFill.js src/core/TimeInputPolyFill.d.ts"
 	},
 	"eslintConfig": {
-		"extends": "react-app"
+		"extends": "react-app",
+		"ignorePatterns": [
+			"index.js",
+			"index.d.ts",
+			"src/core/index.js",
+			"src/core/index.d.ts",
+			"src/core/TimeInputPolyFill.js",
+			"src/core/TimeInputPolyFill.d.ts"
+		]
 	},
 	"browserslist": {
 		"production": [
